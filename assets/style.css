@@ -1,0 +1,16 @@
+.foodButton {
+    background-color: rgb(5, 9, 10);
+    color: white;
+    height: 30px;
+}
+
+#addFood {
+    background-color: rgb(5, 9, 10);
+    color: white;
+    height: 30px;
+}
+
+#foodForm {
+    float: right;
+    
+}
