@@ -56,17 +56,17 @@ $(".foodButton").on("click", function () {
 		})
 });
 
-$(".container").on('click', ".foodGiphys" ,function () {
+$(".container").on('click', ".foodGiphys", function () {
 	console.log("turtle");
-	//	var state = $(this).attr("data-state");
+	var state = $(this).attr("data-state");
 
-	//	var state = $(this).attr("data-state");
-	//		if(state == "still") {
-	//			$(this).attr("src", $(this).attr("data-animate"));
-	//			$(this).attr("data-state", "moving");
-	//		} else {
-	//			$(this).attr("src", $(this).attr("data-still"));
-	//			$(this).attr("data-state", "still");
-	//		}
+	var state = $(this).attr("data-state");
+	if (state == "still") {
+		$(this).attr("src", $(this).attr("data-animate"));
+		$(this).attr("data-state", "moving");
+	} else {
+		$(this).attr("src", $(this).attr("data-still"));
+		$(this).attr("data-state", "still");
+	}
 
 });
