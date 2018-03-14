@@ -1,3 +1,6 @@
+
+
+
 var topics = ["apple", "salad", "quinoa", "rice", "tofu", "noodles", "broccoli", "chicken", "burrito", "hamburger"]
 
 function newButtons() {
@@ -6,13 +9,14 @@ function newButtons() {
 
 	for (var i = 0; i < topics.length; i++) {
 		var newButton = $('<button>');
-		newButton.addClass("foodButton")
+		newButton.addClass("foodButton");
 		newButton.attr("data-topics", topics[i]);
 		newButton.text(topics[i]);
 		$("#foodButtons").append(newButton);
 
 
 	}
+	buttonClicked();
 }
 $("#addFood").on("click", function (event) {
 	event.preventDefault();
@@ -24,6 +28,7 @@ $("#addFood").on("click", function (event) {
 });
 newButtons();
 
+	function buttonClicked () {
 $(".foodButton").on("click", function () {
 	$("#foodGifsHere").empty();
 	var foodChosen = $(this).attr("data-topics");
@@ -55,9 +60,8 @@ $(".foodButton").on("click", function () {
 
 		})
 });
-
+	}
 $(".container").on('click', ".foodGiphys", function () {
-	console.log("turtle");
 	var state = $(this).attr("data-state");
 
 	var state = $(this).attr("data-state");
